@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Intel ME</title>
+    <url>/2023/11/10/ME/</url>
+    <content><![CDATA[<h2 id="Intel-ME"><a href="#Intel-ME" class="headerlink" title="Intel ME"></a>Intel ME</h2><p>Intel Management Engine，简称ME</p>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ol>
+<li><p>2008年后发布的所有<strong>英特尔芯片组</strong>(所以ME存在南桥中)都有集成<br><img src="/pic/image.png" alt="Alt text"><br>英特尔主动管理技术（AMT）是英特尔管理引擎的一部分，用于实现电脑的远程管理，系统管理员可以用AMT控制电源开关，还可以绕过操作系统完成远程操作</p>
+</li>
+<li><p>只要有接通的电源，即使电脑处于关机状态也可以使用 <strong>引擎的具体细节没有公开文档，其代码也使用霍夫曼编码进行硬件级混淆</strong></p>
+</li>
+<li><p>硬件：管理引擎的微处理器基于Quark x86，并使用SPI闪存存储配置状态。此前的版本使用ARC处理器，随着硬件迭代从ARCTangent-A4迁移到更新的ARCompact，还可以执行经过签名的Java Applet。<br>管理引擎有单独的IP地址和MAC地址，可以直接访问网卡。通过MCTP协议，管理引擎可以在网络流量到达操作系统前进行拦截。管理引擎同时也通过PCI接口和主机交互，在Linux上的设备文件为&#x2F;dev&#x2F;mei</p>
+</li>
+<li><p>固件:ME是几个为融合安全和可管理引擎（CSME，Converged Security and Manageability Engine）而生的固件之一</p>
+</li>
+</ol>
+<h2 id="参考网站"><a href="#参考网站" class="headerlink" title="参考网站"></a>参考网站</h2><p><a href="https://zh.wikipedia.org/wiki/%E8%8B%B1%E7%89%B9%E5%B0%94%E7%AE%A1%E7%90%86%E5%BC%95%E6%93%8E">参考1</a><br><a href="https://zhuanlan.zhihu.com/p/30971549">参考2</a></p>
+]]></content>
+      <tags>
+        <tag>ME</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Temp1</title>
+    <url>/2023/11/13/Temp1/</url>
+    <content><![CDATA[<h1 id="GitHub-Pages-快速入门"><a href="#GitHub-Pages-快速入门" class="headerlink" title="GitHub Pages 快速入门"></a>GitHub Pages 快速入门</h1><ol>
+<li><p>您可以使用 GitHub Pages 来展示一些开源项目、主持博客甚或分享您的简历。 本指南将帮助您开始创建下一个网站。</p>
+</li>
+<li><p>GitHub Pages 适用于具有 GitHub Free 和组织的 GitHub Free 的公共仓库，以及具有 GitHub Pro、GitHub Team、GitHub Enterprise Cloud 和 GitHub Enterprise Server 的公1. 共和私有仓库。 有关详细信息，请参阅“GitHub 的计划”。</p>
+</li>
+<li></li>
+<li><p>简介</p>
+</li>
+<li><p>GitHub Pages 是通过 GitHub 托管和发布的公共网页。 启动和运行的最快方法是使用 Jekyll 主题选择器加载预置主题。 然后，您可以修改 GitHub Pages 的内容和样式。</p>
+</li>
+<li></li>
+<li><p>本指南将引导你在 username.github.io 创建用户站点。</p>
+</li>
+<li></li>
+<li><p>创建网站</p>
+</li>
+<li><p>在任何页面的右上角，选择 ，然后单击“新建存储库”****。</p>
+</li>
+<li></li>
+<li><p>GitHub 下拉菜单的屏幕截图，其中显示了用于创建新项的选项。 菜单项“新建存储库”用深橙色框标出。</p>
+</li>
+<li></li>
+<li><p>输入 username.github.io 作为存储库名称。 将 username 替换为你的 GitHub 用户名。 例如，如果用户名为 octocat，则存储库名称应为 octocat.github.io。</p>
+</li>
+<li><p>存储库中 GitHub Pages 设置的屏幕截图。 存储库名称字段包含文本“octocat.github.io”，并用深橙色框出。</p>
+</li>
+<li></li>
+<li><p>在存储库名称下，单击 “设置”。 如果看不到“设置”选项卡，请选择“”下拉菜单，然后单击“设置”********。</p>
+</li>
+<li></li>
+<li><p>存储库标头的屏幕截图，其中显示了选项卡。 “设置”选项卡以深橙色边框突出显示。</p>
+</li>
+<li></li>
+<li><p>在边栏的“代码和自动化”部分中，单击“ Pages”。</p>
+</li>
+<li></li>
+<li><p>在“生成和部署”的“源”下，选择“从分支进行部署”。</p>
+</li>
+<li></li>
+<li><p>在“生成和部署”的“分支”下，使用分支下拉菜单并选择发布源。</p>
+</li>
+<li><p>GitHub 存储库中 Pages 设置的屏幕截图。 用于为发布源选择分支的菜单（标有“无”）用深橙色框出。</p>
+</li>
+<li></li>
+<li><p>（可选）打开存储库的 README.md 文件。 README.md 文件是你将为站点编写内容的位置。 您可以编辑文件或暂时保留默认内容。</p>
+</li>
+<li></li>
+<li><p>访问 username.github.io 以查看新网站。 请注意，对站点的更改在推送到 GitHub 后，最长可能需要 10 分钟才会发布。</p>
+</li>
+<li></li>
+<li><p>更改标题和说明</p>
+</li>
+<li><p>默认情况下，站点的标题为 username.github.io。 可通过编辑存储库中的 _config.yml 文件来更改标题。 您还可以为您的网站添加说明。</p>
+</li>
+<li></li>
+<li><p>单击存储库的“代码”选项卡。</p>
+</li>
+<li></li>
+<li><p>在文件列表中，单击 _config.yml 以打开该文件。</p>
+</li>
+<li></li>
+<li><p>单击  编辑文件。</p>
+</li>
+<li></li>
+<li><p>_config.yml 文件已包含指定站点主题的行。 添加一个新行，其中 title: 后跟所需的标题。 添加一个新行，其中 description: 后跟所需的描述。 例如：</p>
+</li>
+<li></li>
+<li><p>theme: jekyll-theme-minimal</p>
+</li>
+<li><p>title: Octocat’s homepage</p>
+</li>
+<li><p>description: Bookmark this to keep an eye on my project updates!</p>
+</li>
+<li><p>编辑完文件后，单击“提交更改”。</p>
+</li>
+<li></li>
+<li><p>后续步骤</p>
+</li>
+<li><p>若要详细了解如何向网站添加其他页面，请参阅“使用 Jekyll 向 GitHub Pages 站点添加内容”。</p>
+</li>
+<li></li>
+<li><p>若要详细了解如何使用 Jekyll 设置 GitHub Pages 站点，请参阅“关于 GitHub 页面和 Jekyll”。</p>
+</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>Temp2</title>
+    <url>/2023/11/13/Temp2/</url>
+    <content><![CDATA[<hr>
+<h2 id="title-Temp1date-2023-11-13-15-19-57tags"><a href="#title-Temp1date-2023-11-13-15-19-57tags" class="headerlink" title="title: Temp1date: 2023-11-13 15:19:57tags:"></a>title: Temp1<br>date: 2023-11-13 15:19:57<br>tags:</h2><h1 id="GitHub-Pages-快速入门"><a href="#GitHub-Pages-快速入门" class="headerlink" title="GitHub Pages 快速入门"></a>GitHub Pages 快速入门</h1><ol>
+<li><p>您可以使用 GitHub Pages 来展示一些开源项目、主持博客甚或分享您的简历。 本指南将帮助您开始创建下一个网站。</p>
+</li>
+<li><p>GitHub Pages 适用于具有 GitHub Free 和组织的 GitHub Free 的公共仓库，以及具有 GitHub Pro、GitHub Team、GitHub Enterprise Cloud 和 GitHub Enterprise Server 的公1. 共和私有仓库。 有关详细信息，请参阅“GitHub 的计划”。</p>
+</li>
+<li></li>
+<li><p>简介</p>
+</li>
+<li><p>GitHub Pages 是通过 GitHub 托管和发布的公共网页。 启动和运行的最快方法是使用 Jekyll 主题选择器加载预置主题。 然后，您可以修改 GitHub Pages 的内容和样式。</p>
+</li>
+<li></li>
+<li><p>本指南将引导你在 username.github.io 创建用户站点。</p>
+</li>
+<li></li>
+<li><p>创建网站</p>
+</li>
+<li><p>在任何页面的右上角，选择 ，然后单击“新建存储库”****。</p>
+</li>
+<li></li>
+<li><p>GitHub 下拉菜单的屏幕截图，其中显示了用于创建新项的选项。 菜单项“新建存储库”用深橙色框标出。</p>
+</li>
+<li></li>
+<li><p>输入 username.github.io 作为存储库名称。 将 username 替换为你的 GitHub 用户名。 例如，如果用户名为 octocat，则存储库名称应为 octocat.github.io。</p>
+</li>
+<li><p>存储库中 GitHub Pages 设置的屏幕截图。 存储库名称字段包含文本“octocat.github.io”，并用深橙色框出。</p>
+</li>
+<li></li>
+<li><p>在存储库名称下，单击 “设置”。 如果看不到“设置”选项卡，请选择“”下拉菜单，然后单击“设置”********。</p>
+</li>
+<li></li>
+<li><p>存储库标头的屏幕截图，其中显示了选项卡。 “设置”选项卡以深橙色边框突出显示。</p>
+</li>
+<li></li>
+<li><p>在边栏的“代码和自动化”部分中，单击“ Pages”。</p>
+</li>
+<li></li>
+<li><p>在“生成和部署”的“源”下，选择“从分支进行部署”。</p>
+</li>
+<li></li>
+<li><p>在“生成和部署”的“分支”下，使用分支下拉菜单并选择发布源。</p>
+</li>
+<li><p>GitHub 存储库中 Pages 设置的屏幕截图。 用于为发布源选择分支的菜单（标有“无”）用深橙色框出。</p>
+</li>
+<li></li>
+<li><p>（可选）打开存储库的 README.md 文件。 README.md 文件是你将为站点编写内容的位置。 您可以编辑文件或暂时保留默认内容。</p>
+</li>
+<li></li>
+<li><p>访问 username.github.io 以查看新网站。 请注意，对站点的更改在推送到 GitHub 后，最长可能需要 10 分钟才会发布。</p>
+</li>
+<li></li>
+<li><p>更改标题和说明</p>
+</li>
+<li><p>默认情况下，站点的标题为 username.github.io。 可通过编辑存储库中的 _config.yml 文件来更改标题。 您还可以为您的网站添加说明。</p>
+</li>
+<li></li>
+<li><p>单击存储库的“代码”选项卡。</p>
+</li>
+<li></li>
+<li><p>在文件列表中，单击 _config.yml 以打开该文件。</p>
+</li>
+<li></li>
+<li><p>单击  编辑文件。</p>
+</li>
+<li></li>
+<li><p>_config.yml 文件已包含指定站点主题的行。 添加一个新行，其中 title: 后跟所需的标题。 添加一个新行，其中 description: 后跟所需的描述。 例如：</p>
+</li>
+<li></li>
+<li><p>theme: jekyll-theme-minimal</p>
+</li>
+<li><p>title: Octocat’s homepage</p>
+</li>
+<li><p>description: Bookmark this to keep an eye on my project updates!</p>
+</li>
+<li><p>编辑完文件后，单击“提交更改”。</p>
+</li>
+<li></li>
+<li><p>后续步骤</p>
+</li>
+<li><p>若要详细了解如何向网站添加其他页面，请参阅“使用 Jekyll 向 GitHub Pages 站点添加内容”。</p>
+</li>
+<li></li>
+<li><p>若要详细了解如何使用 Jekyll 设置 GitHub Pages 站点，请参阅“关于 GitHub 页面和 Jekyll”。</p>
+</li>
+</ol>
+]]></content>
+  </entry>
+</search>
