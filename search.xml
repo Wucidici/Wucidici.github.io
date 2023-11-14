@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Intel ME</title>
-    <url>/2023/11/10/ME/</url>
-    <content><![CDATA[<h2 id="Intel-ME"><a href="#Intel-ME" class="headerlink" title="Intel ME"></a>Intel ME</h2><p>Intel Management Engine，简称ME</p>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ol>
-<li><p>2008年后发布的所有<strong>英特尔芯片组</strong>(所以ME存在南桥中)都有集成<br><img src="/pic/image.png" alt="Alt text"><br>英特尔主动管理技术（AMT）是英特尔管理引擎的一部分，用于实现电脑的远程管理，系统管理员可以用AMT控制电源开关，还可以绕过操作系统完成远程操作</p>
-</li>
-<li><p>只要有接通的电源，即使电脑处于关机状态也可以使用 <strong>引擎的具体细节没有公开文档，其代码也使用霍夫曼编码进行硬件级混淆</strong></p>
-</li>
-<li><p>硬件：管理引擎的微处理器基于Quark x86，并使用SPI闪存存储配置状态。此前的版本使用ARC处理器，随着硬件迭代从ARCTangent-A4迁移到更新的ARCompact，还可以执行经过签名的Java Applet。<br>管理引擎有单独的IP地址和MAC地址，可以直接访问网卡。通过MCTP协议，管理引擎可以在网络流量到达操作系统前进行拦截。管理引擎同时也通过PCI接口和主机交互，在Linux上的设备文件为&#x2F;dev&#x2F;mei</p>
-</li>
-<li><p>固件:ME是几个为融合安全和可管理引擎（CSME，Converged Security and Manageability Engine）而生的固件之一</p>
-</li>
-</ol>
-<h2 id="参考网站"><a href="#参考网站" class="headerlink" title="参考网站"></a>参考网站</h2><p><a href="https://zh.wikipedia.org/wiki/%E8%8B%B1%E7%89%B9%E5%B0%94%E7%AE%A1%E7%90%86%E5%BC%95%E6%93%8E">参考1</a><br><a href="https://zhuanlan.zhihu.com/p/30971549">参考2</a></p>
-]]></content>
-      <tags>
-        <tag>ME</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Temp2</title>
     <url>/2023/11/13/Temp2/</url>
     <content><![CDATA[<hr>
@@ -198,5 +178,25 @@
 </li>
 </ol>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Intel ME</title>
+    <url>/2023/11/10/ME/</url>
+    <content><![CDATA[<h2 id="Intel-ME"><a href="#Intel-ME" class="headerlink" title="Intel ME"></a>Intel ME</h2><p>Intel Management Engine，简称ME</p>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ol>
+<li><p>2008年后发布的所有<strong>英特尔芯片组</strong>(所以ME存在南桥中)都有集成<br><img src="/pic/image.png" alt="Alt text"><br>英特尔主动管理技术（AMT）是英特尔管理引擎的一部分，用于实现电脑的远程管理，系统管理员可以用AMT控制电源开关，还可以绕过操作系统完成远程操作</p>
+</li>
+<li><p>只要有接通的电源，即使电脑处于关机状态也可以使用 <strong>引擎的具体细节没有公开文档，其代码也使用霍夫曼编码进行硬件级混淆</strong></p>
+</li>
+<li><p>硬件：管理引擎的微处理器基于Quark x86，并使用SPI闪存存储配置状态。此前的版本使用ARC处理器，随着硬件迭代从ARCTangent-A4迁移到更新的ARCompact，还可以执行经过签名的Java Applet。<br>管理引擎有单独的IP地址和MAC地址，可以直接访问网卡。通过MCTP协议，管理引擎可以在网络流量到达操作系统前进行拦截。管理引擎同时也通过PCI接口和主机交互，在Linux上的设备文件为&#x2F;dev&#x2F;mei</p>
+</li>
+<li><p>固件:ME是几个为融合安全和可管理引擎（CSME，Converged Security and Manageability Engine）而生的固件之一</p>
+</li>
+</ol>
+<h2 id="参考网站"><a href="#参考网站" class="headerlink" title="参考网站"></a>参考网站</h2><p><a href="https://zh.wikipedia.org/wiki/%E8%8B%B1%E7%89%B9%E5%B0%94%E7%AE%A1%E7%90%86%E5%BC%95%E6%93%8E">参考1</a><br><a href="https://zhuanlan.zhihu.com/p/30971549">参考2</a></p>
+]]></content>
+      <tags>
+        <tag>ME</tag>
+      </tags>
   </entry>
 </search>
